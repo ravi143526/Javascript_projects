@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Traffic Lights</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: tan;
+            width: 200px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .traffic_lights {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        #red , #yellow , #green{
+            border-radius: 50%;
+            height: 40px;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        #txt {
+            margin-top: 8px;
+            background-color: seagreen;
+            color: white;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="traffic_lights">
+            <button id="red" onclick="redFun()"></button>
+            <button id="yellow" onclick="yelFun()"></button>
+            <button id="green" onclick="greFun()"></button>
+        </div>
+        <div id="txt"></div>
+    </div>
+</body>
+</html>

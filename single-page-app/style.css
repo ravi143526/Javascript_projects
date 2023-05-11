@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cst-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.cst-header-top{
+    height: 60px;
+    overflow: hidden;
+    background-color: #232F3E;
+}
+
+li{
+    list-style-type: none;
+}
+
+td{
+    padding: 4px;
+}

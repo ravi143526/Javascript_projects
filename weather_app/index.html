@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            background-color: cadetblue;
+            width: 300px;
+            padding: 8px;
+        }
+
+        .search-field{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        #txt {
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        #search {
+            width: 100px;
+            height: 36px;
+            font-size: 20px;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .data div{
+            margin: 4px 0;
+        }
+
+        .clouds{
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-field">
+            <input type="text" id="txt" placeholder="Enter your Input">
+            <button id="search">Search</button>
+        </div>
+        <div class="data">
+            <div id="city">Hyderabad</div>
+            <div class="clouds">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56oJuXZq39yQpNMrBipa52U-ykuKWzB8jhyKRJYfpQg&usqp=CAU&ec=48665699" alt="clouds">
+                <span id="cloud">40</span>
+            </div>
+            <div id="wind">160 deg</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

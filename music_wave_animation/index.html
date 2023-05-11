@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Wave Animation</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .music {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .music .bar1 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar2 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar3 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar4 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar5 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar6 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar7 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar8 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar9 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        .music .bar10 {
+            width: 12px;
+            border-radius: 10px;
+            background: white;
+            animation: movement 1.5s ease-in-out infinite;
+        }
+
+        @keyframes movement {
+            0%, 100% {
+                height: 2px;
+            }
+            50% {
+                height: 80px;
+            }
+        }
+
+        .music .bar1 {
+            background-color: #b65252;
+            animation-delay: 1s;
+        }
+
+        .music .bar2 {
+            background-color: pink;
+            animation-delay: .8s;
+        }
+
+        .music .bar3 {
+            background-color: #b65252;
+            animation-delay: .6s;
+        }
+
+        .music .bar4 {
+            background-color: pink;
+            animation-delay: .4s;
+        }
+
+        .music .bar5 {
+            background-color: #b65252;
+            animation-delay: .2s;
+        }
+
+        .music .bar6 {
+            background-color: pink;
+            animation-delay: .2s;
+        }
+
+        .music .bar7 {
+            background-color: #b65252;
+            animation-delay: .8s;
+        }
+
+        .music .bar8 {
+            background-color: pink;
+            animation-delay: .8s;
+        }
+
+        .music .bar9 {
+            background-color: #b65252;
+            animation-delay: .8s;
+        }
+
+        .music .bar10 {
+            background-color: pink;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+        <!-- <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+        <div class="bar9"></div>
+        <div class="bar10"></div> -->
+    </div>
+    <script>
+        let negArr = []
+        function removeNeg(arr) {
+            for(let i = 0; i < arr.length; i++) {
+                if(arr[i] < 0){
+                    negArr.push(arr[i]);
+                }
+                else{
+                    console.log(arr[i]);
+                }
+            }
+        }
+        removeNeg([2,5,7,9,-2,-5,0,-6,8]);
+        console.log(negArr);
+    </script>
+</body>
+</html>

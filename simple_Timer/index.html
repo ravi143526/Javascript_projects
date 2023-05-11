@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Timer</title>
+    <style>
+        .cst-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background: linear-gradient( to bottom left ,rgb(214, 103, 103) ,rgb(134, 231, 134) ,rgb(120, 120, 237));
+            border-radius: 12px;
+        }
+
+        #cst-counter {
+            display: flex;
+            padding: 12px;
+            font-size: 42px;
+        }
+
+        .cst-btns button {
+            width: 120px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient( to left bottom, rgb(221, 150, 92) ,rgb(228, 101, 192));
+            box-shadow: 2px 4px 6px #262424;
+        }
+    </style>
+</head>
+<body>
+    <div class="cst-container">
+        <div id="cst-counter">
+            <div id="mins">00</div>
+            <div>:</div>
+            <div id="secs">00</div>
+            <div>:</div>
+            <div id="minnis">00</div>
+        </div>
+        <div class="cst-btns">
+            <button onclick="startFun()">Start</button>
+            <button onclick="pauseFun()">Pause</button>
+            <button onclick="resetFun()">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

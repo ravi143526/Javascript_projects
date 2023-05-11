@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Color</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            padding-top: 110px;
+            background-color: bisque;
+            width: 100%;
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div style="display: flex; justify-content: center;">
+            <div id="bgColor">Background-color</div> 
+            &nbsp;
+            <div> : </div>
+            &nbsp;
+            <div id="txt">rgb(187 , 167 , 291)</div>
+        </div>
+    <br />
+    <button style="font-size: 20px;padding: 8px; width: 200px; background-color: lightcoral; font-weight: bold;" onclick="toggleData()">Toggle</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

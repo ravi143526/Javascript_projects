@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Coursel</title>
+    <style>
+        .cst-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cst-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            margin-bottom : 20px;
+            background: linear-gradient(green, white,pink);
+            background-color: rgb(101, 161, 230);
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            padding: 18px;
+        }
+
+        .cst-card img {
+            border-radius: 50%;
+        }
+
+        .cst-card h1{
+            text-align: center;
+        }
+
+        .cst-card summary {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .cst-btns {
+            display: flex;
+            position: absolute;
+            width: 500px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cst-btns button {
+            width: 60px;
+            height: 40px;
+            background-color: sienna;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #backward:disabled {
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cst-container">
+        <div class="cst-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Image" width="100" height="100" id="myImg">
+            <h1 id="myTitle">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h1>
+            <summary id="myDesc">
+                "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
+            </summary>
+        </div>
+        <div class="cst-btns">
+            <button id="backward"><</button>
+            <button id="forward">></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

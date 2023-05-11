@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo_list</title>
+    <style>
+        .cst-container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            background-color: wheat;
+            box-shadow: 2px 1px 5px #ccc;
+        }
+        .cst-input-search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #textInput {
+            width: 220px;
+            font-size: 22px;
+            height: 30px;
+        } 
+        #addBtn {
+            width: 70px;
+            height: 35px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(80, 248, 7);
+            background-color: slategrey;
+        }
+
+        .cst-items{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cst-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: sandybrown;
+            padding: 4px;
+            margin-top: 8px;
+            font-size: 20px;
+        }
+
+        #removeBtn{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cst-container">
+        <div class="cst-input-search">
+            <div class="cst-input"><input type="text" id="textInput" value=""></div>
+            <div><button id="addBtn" onclick="getValue()">Add</button></div>
+        </div>
+        <div class="cst-items">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

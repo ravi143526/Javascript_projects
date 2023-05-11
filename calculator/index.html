@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            margin: 50px;
+            padding: 12px;
+        }
+        #screen {
+            border: 1px solid #ccc;
+            height: 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 30px;
+            padding: 4px;
+            margin-bottom: 8px;
+        }
+
+        .btn-container {
+            display: flex;
+        }
+
+        .btn-left {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #btn{
+            width: 85px;
+            height: 40px;
+            font-size: 28px;
+            margin-top: 8px;
+            margin-right: 12px;
+        }
+
+        .btn-right :nth-child(2) {
+            background-color: aqua;
+            height: 200px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="screen"></div>
+        <div class="btn-container">
+            <div class="btn-left">
+                <button id="btn" value="+" onclick="getValue('+')">+</button>
+                <button id="btn" value="-" onclick="getValue('-')">-</button>
+                <button id="btn" value="*" onclick="getValue('*')">*</button>
+                <button id="btn" value="7" onclick="getValue(7)">7</button>
+                <button id="btn" value="8" onclick="getValue(8)">8</button>
+                <button id="btn" value="9" onclick="getValue(9)">9</button>
+                <button id="btn" value="4" onclick="getValue(4)">4</button>
+                <button id="btn" value="5" onclick="getValue(5)">5</button>
+                <button id="btn" value="6" onclick="getValue(6)">6</button>
+                <button id="btn" value="1" onclick="getValue(1)">1</button>
+                <button id="btn" value="2" onclick="getValue(2)">2</button>
+                <button id="btn" value="3" onclick="getValue(3)">3</button>
+                <button id="btn" value="0" onclick="getValue(0)">0</button>
+                <button id="btn" value="." onclick="getValue('.')">.</button>
+                <button id="btn" value="c" onclick="clearData()">C</button>
+            </div>
+            <div class="btn-right">
+                <button id="btn" value="/" onclick="getValue('/')">/</button>
+                <button id="btn" value="=" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
